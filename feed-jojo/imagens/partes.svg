@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#2a0f45"/>
+  <text x="300" y="40" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="28" fill="#f2c230">AS 9 PARTES DE JOJO</text>
+  <g fill="#3b1460" stroke="#f2c230" stroke-width="2">
+    <rect x="20" y="60" width="180" height="100" rx="8"/>
+    <rect x="210" y="60" width="180" height="100" rx="8"/>
+    <rect x="400" y="60" width="180" height="100" rx="8"/>
+    <rect x="20" y="170" width="180" height="100" rx="8"/>
+    <rect x="210" y="170" width="180" height="100" rx="8"/>
+    <rect x="400" y="170" width="180" height="100" rx="8"/>
+    <rect x="20" y="280" width="180" height="100" rx="8"/>
+    <rect x="210" y="280" width="180" height="100" rx="8"/>
+    <rect x="400" y="280" width="180" height="100" rx="8"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g font-size="14" font-weight="700" fill="#f2c230">
+      <text x="110" y="92">PARTE 1</text>
+      <text x="300" y="92">PARTE 2</text>
+      <text x="490" y="92">PARTE 3</text>
+      <text x="110" y="202">PARTE 4</text>
+      <text x="300" y="202">PARTE 5</text>
+      <text x="490" y="202">PARTE 6</text>
+      <text x="110" y="312">PARTE 7</text>
+      <text x="300" y="312">PARTE 8</text>
+      <text x="490" y="312">PARTE 9</text>
+    </g>
+    <g font-size="15" fill="#ffffff">
+      <text x="110" y="124">Phantom Blood</text>
+      <text x="300" y="124">Battle Tendency</text>
+      <text x="490" y="124">Stardust Crusaders</text>
+      <text x="110" y="228">Diamond is</text>
+      <text x="110" y="248">Unbreakable</text>
+      <text x="300" y="234">Golden Wind</text>
+      <text x="490" y="234">Stone Ocean</text>
+      <text x="110" y="344">Steel Ball Run</text>
+      <text x="300" y="344">JoJolion</text>
+      <text x="490" y="344">The JOJOLands</text>
+    </g>
+  </g>
+</svg>

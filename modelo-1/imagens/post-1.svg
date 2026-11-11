@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9a8d4"/>
+      <stop offset="0.5" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="onda" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#ceu)"/>
+  <path d="M0 330 C150 250 260 420 400 350 S560 260 600 300 V600 H0 Z" fill="#fb923c" fill-opacity="0.55"/>
+  <path d="M0 400 C140 330 280 500 420 420 S560 360 600 400 V600 H0 Z" fill="url(#onda)"/>
+  <path d="M0 500 C160 450 300 560 450 500 S570 470 600 490 V600 H0 Z" fill="#4338ca" fill-opacity="0.8"/>
+</svg>

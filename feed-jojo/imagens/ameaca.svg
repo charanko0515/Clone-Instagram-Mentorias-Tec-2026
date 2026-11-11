@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1c0830"/>
+  <g font-family="'Yu Gothic', Meiryo, 'MS Gothic', sans-serif" font-weight="700" fill="#b14fd8" stroke="#f2c230" stroke-width="2">
+    <text x="40" y="110" font-size="90" transform="rotate(-12 80 80)">ゴ</text>
+    <text x="150" y="190" font-size="110" transform="rotate(8 200 150)">ゴ</text>
+    <text x="300" y="120" font-size="80" transform="rotate(-6 340 90)">ゴ</text>
+    <text x="420" y="220" font-size="120" transform="rotate(10 470 170)">ゴ</text>
+    <text x="70" y="300" font-size="70" transform="rotate(6 100 270)">ゴ</text>
+    <text x="300" y="290" font-size="90" transform="rotate(-10 340 250)">ゴ</text>
+  </g>
+  <rect y="330" width="600" height="70" fill="#000000" fill-opacity="0.55"/>
+  <text x="300" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Algo ameaçador se aproxima...</text>
+</svg>

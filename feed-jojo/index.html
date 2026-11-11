@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+
+  <!-- Exemplo personalizado a partir do modelo 1: só mudaram as cores, o logo e o conteúdo -->
+  <style>
+    .bg-muted { background-color: #f3ecf9; }
+    .bg-card { background-color: #ffffff; }
+    .border-border { border-color: #e4d6f0; }
+    .text-main { color: #2a1838; }
+    .text-muted { color: #6f5c80; }
+    .text-accent { color: #7b2cbf; }
+    .bg-story { background: linear-gradient(45deg, #f2c230, #d63384, #7b2cbf); }
+    .logo { font-family: Impact, "Arial Black", sans-serif; color: #7b2cbf; text-shadow: 2px 2px 0 #f2c230; letter-spacing: 1px; }
+  </style>
+
+  <title>JoJogram</title>
+</head>
+
+<body class="min-h-screen bg-muted text-main">
+
+  <header class="sticky top-0 z-40 bg-card border-b border-border">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14 md:h-16">
+
+        <h1 class="logo text-2xl">JOJOGRAM</h1>
+
+        <input
+          type="text"
+          placeholder="Pesquisar Stands"
+          class="hidden md:block w-64 h-9 bg-muted px-4 rounded-lg text-sm"
+        />
+
+        <div class="hidden md:flex items-center gap-5">
+          <button aria-label="Início"><i class="bx bx-home text-xl"></i></button>
+          <button aria-label="Pesquisar"><i class="bx bx-search text-xl"></i></button>
+          <button aria-label="Nova postagem"><i class="bx bx-plus text-xl"></i></button>
+          <button aria-label="Curtidas"><i class="bx bx-heart text-xl"></i></button>
+          <button aria-label="Perfil" class="w-7 h-7 rounded-full bg-story"></button>
+        </div>
+
+        <button class="md:hidden" aria-label="Menu"><i class="bx bx-menu text-2xl"></i></button>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-6 pb-24 md:px-8 md:py-8">
+    <div class="flex gap-8">
+
+      <div class="flex-1 min-w-0 max-w-lg mx-auto">
+
+        <!-- Stories: cada um é uma parte da série -->
+        <section class="bg-card border border-border rounded-lg p-4 mb-4">
+          <div class="flex gap-4 overflow-x-auto">
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-muted flex items-center justify-center">
+                <i class="bx bx-plus text-2xl text-muted"></i>
+              </div>
+              <span class="text-xs mt-1">Você</span>
+            </div>
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-story p-[3px]">
+                <div class="w-full h-full rounded-full bg-card p-[2px]">
+                  <div class="w-full h-full rounded-full bg-muted flex items-center justify-center logo text-xl">1</div>
+                </div>
+              </div>
+              <span class="text-xs mt-1">Parte 1</span>
+            </div>
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-story p-[3px]">
+                <div class="w-full h-full rounded-full bg-card p-[2px]">
+                  <div class="w-full h-full rounded-full bg-muted flex items-center justify-center logo text-xl">3</div>
+                </div>
+              </div>
+              <span class="text-xs mt-1">Parte 3</span>
+            </div>
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-story p-[3px]">
+                <div class="w-full h-full rounded-full bg-card p-[2px]">
+                  <div class="w-full h-full rounded-full bg-muted flex items-center justify-center logo text-xl">4</div>
+                </div>
+              </div>
+              <span class="text-xs mt-1">Parte 4</span>
+            </div>
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-story p-[3px]">
+                <div class="w-full h-full rounded-full bg-card p-[2px]">
+                  <div class="w-full h-full rounded-full bg-muted flex items-center justify-center logo text-xl">5</div>
+                </div>
+              </div>
+              <span class="text-xs mt-1">Parte 5</span>
+            </div>
+
+            <div class="flex flex-col items-center shrink-0">
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-story p-[3px]">
+                <div class="w-full h-full rounded-full bg-card p-[2px]">
+                  <div class="w-full h-full rounded-full bg-muted flex items-center justify-center logo text-xl">7</div>
+                </div>
+              </div>
+              <span class="text-xs mt-1">Parte 7</span>
+            </div>
+
+          </div>
+        </section>
+
+        <article class="bg-card border border-border rounded-lg mb-4 overflow-hidden">
+          <div class="flex items-center justify-between p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-story p-[2px]">
+                <div class="w-full h-full rounded-full bg-card flex items-center justify-center text-sm font-semibold">A</div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">ana.jojofan</p>
+                <p class="text-xs text-muted">Teresina, PI</p>
+              </div>
+            </div>
+            <button aria-label="Mais opções"><i class="bx bx-dots-horizontal text-xl"></i></button>
+          </div>
+          <div class="bg-muted relative">
+            <img src="imagens/parte1-vs.svg" alt="Cartaz com os nomes Jonathan e Dio separados por um grande VS" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <button aria-label="Curtir"><i class="bx bx-heart text-2xl"></i></button>
+                <button aria-label="Comentar"><i class="bx bx-message-circle text-2xl"></i></button>
+                <button aria-label="Compartilhar"><i class="bx bx-send text-2xl"></i></button>
+              </div>
+              <button aria-label="Salvar"><i class="bx bx-bookmark text-2xl"></i></button>
+            </div>
+            <p class="font-semibold text-sm mb-2">1.987 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold">ana.jojofan</span>
+              <span class="opacity-90">Comecei pela Parte 1, Phantom Blood. A rivalidade entre Jonathan Joestar e Dio Brando é o ponto de partida de toda a saga. #JoJo</span>
+            </p>
+            <button class="text-sm text-muted mt-1">Ver todos os 64 comentários</button>
+            <p class="text-xs text-muted mt-2 uppercase">Há 2 horas</p>
+          </div>
+        </article>
+
+        <article class="bg-card border border-border rounded-lg mb-4 overflow-hidden">
+          <div class="flex items-center justify-between p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-story p-[2px]">
+                <div class="w-full h-full rounded-full bg-card flex items-center justify-center text-sm font-semibold">L</div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">lucas_stand</p>
+                <p class="text-xs text-muted">Parnaíba, PI</p>
+              </div>
+            </div>
+            <button aria-label="Mais opções"><i class="bx bx-dots-horizontal text-xl"></i></button>
+          </div>
+          <div class="bg-muted relative">
+            <img src="imagens/ficha-stand.svg" alt="Ficha de Stand inventado chamado Café Expresso, com notas de A a E em poder, velocidade, alcance, durabilidade, precisão e potencial" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <button aria-label="Curtir"><i class="bx bx-heart text-2xl"></i></button>
+                <button aria-label="Comentar"><i class="bx bx-message-circle text-2xl"></i></button>
+                <button aria-label="Compartilhar"><i class="bx bx-send text-2xl"></i></button>
+              </div>
+              <button aria-label="Salvar"><i class="bx bx-bookmark text-2xl"></i></button>
+            </div>
+            <p class="font-semibold text-sm mb-2">842 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold">lucas_stand</span>
+              <span class="opacity-90">Os Stands aparecem na Parte 3, Stardust Crusaders. Inventei a ficha do meu: Café Expresso, velocidade A! #Stand</span>
+            </p>
+            <button class="text-sm text-muted mt-1">Ver todos os 31 comentários</button>
+            <p class="text-xs text-muted mt-2 uppercase">Há 5 horas</p>
+          </div>
+        </article>
+
+        <article class="bg-card border border-border rounded-lg mb-4 overflow-hidden">
+          <div class="flex items-center justify-between p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-story p-[2px]">
+                <div class="w-full h-full rounded-full bg-card flex items-center justify-center text-sm font-semibold">B</div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">bia.gogogo</p>
+                <p class="text-xs text-muted">Picos, PI</p>
+              </div>
+            </div>
+            <button aria-label="Mais opções"><i class="bx bx-dots-horizontal text-xl"></i></button>
+          </div>
+          <div class="bg-muted relative">
+            <img src="imagens/ameaca.svg" alt="Letras japonesas ゴ espalhadas sobre um fundo roxo escuro, com a frase algo ameaçador se aproxima" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <button aria-label="Curtir"><i class="bx bx-heart text-2xl"></i></button>
+                <button aria-label="Comentar"><i class="bx bx-message-circle text-2xl"></i></button>
+                <button aria-label="Compartilhar"><i class="bx bx-send text-2xl"></i></button>
+              </div>
+              <button aria-label="Salvar"><i class="bx bx-bookmark text-2xl"></i></button>
+            </div>
+            <p class="font-semibold text-sm mb-2">3.402 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold">bia.gogogo</span>
+              <span class="opacity-90">Quando aparece aquele "ゴゴゴゴ" na tela, eu já sei que vem coisa séria.</span>
+            </p>
+            <button class="text-sm text-muted mt-1">Ver todos os 120 comentários</button>
+            <p class="text-xs text-muted mt-2 uppercase">Há 1 dia</p>
+          </div>
+        </article>
+
+        <article class="bg-card border border-border rounded-lg mb-4 overflow-hidden">
+          <div class="flex items-center justify-between p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-story p-[2px]">
+                <div class="w-full h-full rounded-full bg-card flex items-center justify-center text-sm font-semibold">R</div>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">rafa_9partes</p>
+                <p class="text-xs text-muted">Floriano, PI</p>
+              </div>
+            </div>
+            <button aria-label="Mais opções"><i class="bx bx-dots-horizontal text-xl"></i></button>
+          </div>
+          <div class="bg-muted relative">
+            <img src="imagens/partes.svg" alt="Mapa com as 9 partes de JoJo, de Phantom Blood até The JOJOLands" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <button aria-label="Curtir"><i class="bx bx-heart text-2xl"></i></button>
+                <button aria-label="Comentar"><i class="bx bx-message-circle text-2xl"></i></button>
+                <button aria-label="Compartilhar"><i class="bx bx-send text-2xl"></i></button>
+              </div>
+              <button aria-label="Salvar"><i class="bx bx-bookmark text-2xl"></i></button>
+            </div>
+            <p class="font-semibold text-sm mb-2">517 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold">rafa_9partes</span>
+              <span class="opacity-90">Mapa das partes: já são 9, e cada uma tem um JoJo diferente como protagonista. Qual é a sua favorita?</span>
+            </p>
+            <button class="text-sm text-muted mt-1">Ver todos os 88 comentários</button>
+            <p class="text-xs text-muted mt-2 uppercase">Há 3 dias</p>
+          </div>
+        </article>
+
+      </div>
+
+      <aside class="hidden lg:block w-80 shrink-0">
+        <div class="sticky top-20">
+
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-14 h-14 rounded-full bg-story p-[2px]">
+                <div class="w-full h-full rounded-full bg-card flex items-center justify-center font-semibold">F</div>
+              </div>
+              <div>
+                <p class="font-semibold text-sm">fa_de_jojo</p>
+                <p class="text-sm text-muted">Fã de JoJo</p>
+              </div>
+            </div>
+            <button class="text-accent text-sm font-semibold">Trocar</button>
+          </div>
+
+          <div class="flex items-center justify-between mb-4">
+            <p class="text-sm font-semibold text-muted">Sugestões para você</p>
+            <button class="text-xs font-semibold">Ver tudo</button>
+          </div>
+
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center text-xs font-semibold">C</div>
+              <div>
+                <p class="text-sm font-semibold">camila.morioh</p>
+                <p class="text-xs text-muted">Fã da Parte 4</p>
+              </div>
+            </div>
+            <button class="text-accent text-xs font-semibold">Seguir</button>
+          </div>
+
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center text-xs font-semibold">G</div>
+              <div>
+                <p class="text-sm font-semibold">gui.goldenwind</p>
+                <p class="text-xs text-muted">Fã da Parte 5</p>
+              </div>
+            </div>
+            <button class="text-accent text-xs font-semibold">Seguir</button>
+          </div>
+
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center text-xs font-semibold">D</div>
+              <div>
+                <p class="text-sm font-semibold">duda.steelball</p>
+                <p class="text-xs text-muted">Fã da Parte 7</p>
+              </div>
+            </div>
+            <button class="text-accent text-xs font-semibold">Seguir</button>
+          </div>
+
+          <div class="mt-8">
+            <p class="text-xs text-muted leading-relaxed">JoJo's Bizarre Adventure é uma obra de Hirohiko Araki. Perfis fictícios e ilustrações próprias, sem imagens oficiais.</p>
+            <p class="text-xs text-muted mt-4">© 2026 JoJogram - exemplo de aula</p>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-card border-t border-border z-50">
+    <div class="flex items-center justify-around h-14 px-4">
+      <button aria-label="Início"><i class="bx bx-home text-2xl"></i></button>
+      <button aria-label="Pesquisar"><i class="bx bx-search text-2xl"></i></button>
+      <button aria-label="Nova postagem"><i class="bx bx-plus text-2xl"></i></button>
+      <button aria-label="Curtidas"><i class="bx bx-heart text-2xl"></i></button>
+      <button aria-label="Perfil"><i class="bx bx-user text-2xl"></i></button>
+    </div>
+  </nav>
+
+</body>
+</html>
